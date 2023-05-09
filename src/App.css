@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+body{
+  background: linear-gradient(90deg, #97b2f5 0%, #516fad 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  height: 80vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.deparments-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.appointment-preview{
   color: white;
+  background-color: #4a5779;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px #2e3a54;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: auto;
+  font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.deparments-select{
+  width: 100%;
+  background-color: white;
 }
+.date-area{
+  background-color: white;
+  border-radius: 10px;
+}
+.submit-btn-area{
+   
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit-btn-area>.col-3>button{ 
+    width: 200px;
+    height: 50px;
+    background-color: #4a5779;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .submit-btn-area>.col-3>button:hover{
+    background-color: #3c4a6b;
   }
-  to {
-    transform: rotate(360deg);
+  .submit-btn-area>.col-3>button:active{
+    background-color: #2e3a54;
   }
+  .hour-btn{
+    width: 50px;
+    height: 25px;
+    background-color: #4a5779;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .hour-btn:hover{
+    background-color: #3c4a6b;
+  }
+  .hour-btn:active{
+    background-color: #2e3a54;
+  }
+  .hour-btn:focus{
+    outline: none;
+  }
+  .hour-btn:disabled{
+    background-color: #737375;
+    color: white;
+    cursor: text;
+  }
+  .doctor-preview{
+    border: #2e3a54 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px #2e3a54;
+    cursor: pointer;
+    background-color: white;
+    margin: 5px;
+  }
+  .doctor-preview:hover{
+    box-shadow: 0px 0px 15px 0px #535457;
+  }
+  .doctor-preview>.row{
+    margin: 10px;
+  }
+  .appointment-preview>.row{
+    margin: 5px;
+    width: 100%;
+  }
+  .appointment-hours{
+    gap: 5px;
+  }
+  .appointment-preview-title{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .appointment-preview-desc{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .popup-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+.overlay,.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    background: rgba(0,0,0,0.7);
+}
+.close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    outline: none;
+}
+.close-btn:hover{
+    background: #555;
 }
